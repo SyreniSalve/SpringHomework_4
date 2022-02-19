@@ -1,0 +1,25 @@
+Create a project based on Spring Boot using:
+
+    spring-boot-starter-data-jpa
+    lombok
+    h2
+
+Create the Book entity. Rows should be kept in the books table. This entity should have an automatically generated identifier of type Long and columns such as:
+
+    title
+    author
+    ISBN
+    pagesNum
+
+Create a JPA repository with the query:
+
+    returning all books with a specific title
+    returning the book after ISBN
+    returning the author's book on a specific ISBN
+    returning the 3 thickest books by a given author (the one with the most pages should be the first, the last one with the least)
+    that returns all books whose names begin with a particular String
+    returning all books with pages between the two values
+
+These queries should be constructed using the appropriate names methods. In addition, implement a method called findWherePagesNumIsGreaterThanX and one argument of typeInteger that returns all books that have at least as many pages as the input argument is.
+
+
